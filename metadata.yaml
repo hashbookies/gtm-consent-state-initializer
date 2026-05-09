@@ -1,5 +1,5 @@
 homepage: "https://github.com/hashbookies"
 documentation: "https://github.com/hashbookies/gtm-consent-state-initializer#readme"
 versions:
-  - sha: "REPLACE_WITH_INITIAL_TEMPLATE_COMMIT_SHA"
+  - sha: "c0c93ddbea363ecfac94cad007f9080c731c13e3"
     changeNotes: "Initial release."
