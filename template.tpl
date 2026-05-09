@@ -246,7 +246,7 @@ ___WEB_PERMISSIONS___
                 ],
                 "mapValue": [
                   { "type": 1, "string": "ad_storage" },
-                  { "type": 8, "boolean": false },
+                  { "type": 8, "boolean": true },
                   { "type": 8, "boolean": true }
                 ]
               },
@@ -259,7 +259,7 @@ ___WEB_PERMISSIONS___
                 ],
                 "mapValue": [
                   { "type": 1, "string": "analytics_storage" },
-                  { "type": 8, "boolean": false },
+                  { "type": 8, "boolean": true },
                   { "type": 8, "boolean": true }
                 ]
               },
@@ -272,7 +272,7 @@ ___WEB_PERMISSIONS___
                 ],
                 "mapValue": [
                   { "type": 1, "string": "ad_user_data" },
-                  { "type": 8, "boolean": false },
+                  { "type": 8, "boolean": true },
                   { "type": 8, "boolean": true }
                 ]
               },
@@ -285,7 +285,7 @@ ___WEB_PERMISSIONS___
                 ],
                 "mapValue": [
                   { "type": 1, "string": "ad_personalization" },
-                  { "type": 8, "boolean": false },
+                  { "type": 8, "boolean": true },
                   { "type": 8, "boolean": true }
                 ]
               },
@@ -298,7 +298,7 @@ ___WEB_PERMISSIONS___
                 ],
                 "mapValue": [
                   { "type": 1, "string": "functionality_storage" },
-                  { "type": 8, "boolean": false },
+                  { "type": 8, "boolean": true },
                   { "type": 8, "boolean": true }
                 ]
               },
@@ -311,7 +311,7 @@ ___WEB_PERMISSIONS___
                 ],
                 "mapValue": [
                   { "type": 1, "string": "personalization_storage" },
-                  { "type": 8, "boolean": false },
+                  { "type": 8, "boolean": true },
                   { "type": 8, "boolean": true }
                 ]
               },
@@ -324,7 +324,20 @@ ___WEB_PERMISSIONS___
                 ],
                 "mapValue": [
                   { "type": 1, "string": "security_storage" },
-                  { "type": 8, "boolean": false },
+                  { "type": 8, "boolean": true },
+                  { "type": 8, "boolean": true }
+                ]
+              },
+              {
+                "type": 3,
+                "mapKey": [
+                  { "type": 1, "string": "consentType" },
+                  { "type": 1, "string": "read" },
+                  { "type": 1, "string": "write" }
+                ],
+                "mapValue": [
+                  { "type": 1, "string": "wait_for_update" },
+                  { "type": 8, "boolean": true },
                   { "type": 8, "boolean": true }
                 ]
               }
@@ -373,14 +386,16 @@ ___WEB_PERMISSIONS___
           "key": "cookieAccess",
           "value": {
             "type": 1,
-            "string": "any"
+            "string": "specific"
           }
         },
         {
           "key": "cookieNames",
           "value": {
             "type": 2,
-            "listItem": []
+            "listItem": [
+              { "type": 1, "string": "cmp_consent" }
+            ]
           }
         }
       ]
@@ -388,7 +403,7 @@ ___WEB_PERMISSIONS___
     "clientAnnotations": {
       "isEditedByUser": true
     },
-    "isRequired": false
+    "isRequired": true
   }
 ]
 
@@ -401,3 +416,4 @@ scenarios: []
 ___NOTES___
 
 Community-ready template for initializing GTM Consent Mode defaults.
+
