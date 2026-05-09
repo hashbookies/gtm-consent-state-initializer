@@ -15,7 +15,7 @@ ___INFO___
   "displayName": "GTM Consent State Initializer",
   "categories": [
     "TAG_MANAGEMENT",
-    "UTILITY",
+    "UTILITIES",
     "ANALYTICS"
   ],
   "description": "Initializes Consent Mode defaults as early as possible using GTM consent APIs.",
