@@ -10,7 +10,7 @@ ___INFO___
 
 {
   "type": "TAG",
-  "id": "cvt_dd_consent_state_initializer",
+  "id": "cvt_tk_consent_state_initializer",
   "version": 1,
   "displayName": "GTM Consent State Initializer",
   "categories": [
